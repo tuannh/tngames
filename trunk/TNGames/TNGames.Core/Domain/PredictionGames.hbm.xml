@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.PredictionGame, TNGames.Core" table="PredictionGames">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="PredictionGameID" length="4" sql-type="int" not-null="true" unique="true" index="PK_PredictionGames"/>
+			<generator class="native" />
+		</id>
+		<property name="PredictionGameName" type="String">
+			<column name="PredictionGameName" length="250" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="CreatedDate" type="DateTime">
+			<column name="CreatedDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="ModifiedDate" type="DateTime">
+			<column name="ModifiedDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="Active" type="Boolean">
+			<column name="Active" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<property name="IsUpdateAnswer" type="Boolean">
+			<column name="IsUpdateAnswer" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<property name="IsCalculate" type="Boolean">
+			<column name="IsCalculate" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<many-to-one name="User" class="TNGames.Core.Domain.User, TNGames.Core">
+			<column name="UserID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<bag name="PredictionGameUsers" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="PredictionGameID"/>
+			<one-to-many class="TNGames.Core.Domain.PredictionGameUser, TNGames.Core"/>
+		</bag>
+		<bag name="Predictionses" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="PredictionGameID"/>
+			<one-to-many class="TNGames.Core.Domain.Prediction, TNGames.Core"/>
+		</bag>
+	</class>
+</hibernate-mapping>

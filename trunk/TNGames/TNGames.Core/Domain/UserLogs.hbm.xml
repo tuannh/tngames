@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TNGames.Core.Domain.UserLog, TNGames.Core" table="UserLogs">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="UserLogID" length="4" sql-type="int" not-null="true" unique="true" index="PK_UserLogs"/>
+      <generator class="native" />
+    </id>
+    <property name="LogAction" type="String">
+      <column name="LogAction" sql-type="ntext" not-null="false"/>
+    </property>
+    <property name="LogDate" type="DateTime">
+      <column name="LogDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="LogType" type="Int32">
+      <column name="LogType" length="4" sql-type="int" not-null="false"/>
+    </property>
+    <many-to-one name="User" class="TNGames.Core.Domain.User, TNGames.Core">
+      <column name="UserID" length="4" sql-type="int" not-null="false"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

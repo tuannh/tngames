@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.New, TNGames.Core" table="News">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="NewsID" length="4" sql-type="int" not-null="true" unique="true" index="PK_News"/>
+			<generator class="native" />
+		</id>
+		<property name="NewsTitle" type="String">
+			<column name="NewsTitle" length="250" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="NewsAlias" type="String">
+			<column name="NewsAlias" length="250" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="Summary" type="String">
+			<column name="Summary" length="500" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="NewsContent" type="String">
+			<column name="NewsContent"  sql-type="ntext" not-null="false"/>
+		</property>
+		<property name="Photo" type="String">
+			<column name="Photo" length="150" sql-type="nvarchar" not-null="false"/>
+		</property>
+    <property name="Active" type="Boolean">
+      <column name="Active" length="1" sql-type="bit" not-null="false"/>
+    </property>
+		<property name="CreatedDate" type="DateTime">
+			<column name="CreatedDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="ModifedDate" type="DateTime">
+			<column name="ModifedDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<many-to-one name="Category" class="TNGames.Core.Domain.Category, TNGames.Core">
+			<column name="CategoryID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.QuestionGame, TNGames.Core" table="QuestionGames">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="QuestionGameID" length="4" sql-type="int" not-null="true" unique="true" index="PK_QuestionGames"/>
+			<generator class="native" />
+		</id>
+		<property name="QuestionGameName" type="String">
+			<column name="QuestionGameName" length="150" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="CreatedDate" type="DateTime">
+			<column name="CreatedDate" length="8" sql-type="datetime" not-null="false"/>
+		</property>
+		<property name="Active" type="Boolean">
+			<column name="Active" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<many-to-one name="User" class="TNGames.Core.Domain.User, TNGames.Core">
+			<column name="UserID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<bag name="QuestionUserses" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="QuestionGameID"/>
+			<one-to-many class="TNGames.Core.Domain.QuestionUser, TNGames.Core"/>
+		</bag>
+		<bag name="Questionses" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="QuestionGameID"/>
+			<one-to-many class="TNGames.Core.Domain.Question, TNGames.Core"/>
+		</bag>
+	</class>
+</hibernate-mapping>

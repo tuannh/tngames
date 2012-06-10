@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.Answer, TNGames.Core" table="Answers">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="AnswerID" length="4" sql-type="int" not-null="true" unique="true" index="PK_Answers"/>
+			<generator class="native" />
+		</id>
+		<property name="AnswerText" type="String">
+			<column name="AnswerText" length="250" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="IsCorrectAnswer" type="Boolean">
+			<column name="IsCorrectAnswer" length="1" sql-type="bit" not-null="false"/>
+		</property>
+		<many-to-one name="Question" class="TNGames.Core.Domain.Question, TNGames.Core">
+			<column name="QuestionID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<bag name="QuestionUserDetailses" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="AnswerID"/>
+			<one-to-many class="TNGames.Core.Domain.QuestionUserDetail, TNGames.Core"/>
+		</bag>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35430651-8526-46AD-97AA-3057DE688D68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TNGames.Core</RootNamespace>
+    <AssemblyName>TNGames.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>..\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizSettings.cs" />
+    <Compile Include="Cache\CacheEntry.cs" />
+    <Compile Include="Cache\CacheLockbox.cs" />
+    <Compile Include="Cache\CMSCache.cs" />
+    <Compile Include="BizQuestionGameSettings.cs" />
+    <Compile Include="BizPredictionGameSettings.cs" />
+    <Compile Include="BizBettingGameSettings.cs" />
+    <Compile Include="DB\Database.cs" />
+    <Compile Include="DomainManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Answers.cs" />
+    <Compile Include="Domain\Betting.cs" />
+    <Compile Include="Domain\BettingRates.cs" />
+    <Compile Include="Domain\BettingUserDetails.cs" />
+    <Compile Include="Domain\BettingUsers.cs" />
+    <Compile Include="Domain\Categories.cs" />
+    <Compile Include="Domain\Contents.cs" />
+    <Compile Include="Domain\ContentTypes.cs" />
+    <Compile Include="Domain\BettingRates.extra.cs" />
+    <Compile Include="Domain\Betting.extra.cs" />
+    <Compile Include="Domain\Contents.extra.cs" />
+    <Compile Include="Domain\Answers.extra.cs" />
+    <Compile Include="Domain\PredictionAnswers.extra.cs" />
+    <Compile Include="Domain\PredictionAnswers.cs" />
+    <Compile Include="Domain\QuestionGames.cs" />
+    <Compile Include="Domain\Users.extra.cs" />
+    <Compile Include="Domain\Questions.extra.cs" />
+    <Compile Include="Domain\News.cs" />
+    <Compile Include="Domain\PredictionGames.cs" />
+    <Compile Include="Domain\PredictionGameUser.cs" />
+    <Compile Include="Domain\PredictionGameUserDetails.cs" />
+    <Compile Include="Domain\Predictions.cs" />
+    <Compile Include="Domain\Questions.cs" />
+    <Compile Include="Domain\QuestionUserDetails.cs" />
+    <Compile Include="Domain\QuestionUsers.cs" />
+    <Compile Include="Domain\Settings.cs" />
+    <Compile Include="Domain\UserLogs.cs" />
+    <Compile Include="Domain\Users.cs" />
+    <Compile Include="Helper\LogType.cs" />
+    <Compile Include="Helper\TNHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionFactory.cs" />
+    <Compile Include="SortOrder.cs" />
+    <Compile Include="Cache\TCache.cs" />
+    <Compile Include="Helper\TextInputUtil.cs" />
+    <Compile Include="Helper\Utils.cs" />
+    <Compile Include="WebConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\Answers.hbm.xml" />
+    <EmbeddedResource Include="Domain\Betting.hbm.xml" />
+    <EmbeddedResource Include="Domain\BettingUsers.hbm.xml" />
+    <EmbeddedResource Include="Domain\Categories.hbm.xml" />
+    <EmbeddedResource Include="Domain\Contents.hbm.xml" />
+    <EmbeddedResource Include="Domain\ContentTypes.hbm.xml" />
+    <EmbeddedResource Include="Domain\News.hbm.xml" />
+    <EmbeddedResource Include="Domain\Predictions.hbm.xml" />
+    <EmbeddedResource Include="Domain\Questions.hbm.xml" />
+    <EmbeddedResource Include="Domain\QuestionUsers.hbm.xml" />
+    <EmbeddedResource Include="Domain\Settings.hbm.xml" />
+    <EmbeddedResource Include="Domain\UserLogs.hbm.xml" />
+    <EmbeddedResource Include="Domain\Users.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\PredictionGames.hbm.xml" />
+    <EmbeddedResource Include="Domain\PredictionGameUser.hbm.xml" />
+    <EmbeddedResource Include="Domain\PredictionGameUserDetails.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\QuestionUserDetails.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\BettingRates.hbm.xml" />
+    <EmbeddedResource Include="Domain\BettingUserDetails.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\QuestionGames.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\PredictionAnswers.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

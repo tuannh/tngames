@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TNGames.Core.Domain.Betting, TNGames.Core" table="Betting">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="BettingID" length="4" sql-type="int" not-null="true" unique="true" index="PK_Betting"/>
+      <generator class="native" />
+    </id>
+    <property name="BettingName" type="String">
+      <column name="BettingName" length="150" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="Description" type="String">
+      <column name="Description"  sql-type="ntext" not-null="false"/>
+    </property>
+    <property name="HomeTeam" type="String">
+      <column name="HomeTeam" length="150" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="VisitingTeam" type="String">
+      <column name="VisitingTeam" length="150" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="HomeGoalScore" type="Int32">
+      <column name="HomeGoalScore" length="4" sql-type="int" not-null="false"/>
+    </property>
+    <property name="VisitingGoalScore" type="Int32">
+      <column name="VisitingGoalScore" length="4" sql-type="int" not-null="false"/>
+    </property>
+    <property name="PlayDate" type="DateTime">
+      <column name="PlayDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="StartDate" type="DateTime">
+      <column name="StartDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="EndDate" type="DateTime">
+      <column name="EndDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="IsUpdateScore" type="Boolean">
+      <column name="IsUpdateScore" length="1" sql-type="bit" not-null="false"/>
+    </property>
+    <property name="IsCalculate" type="Boolean">
+      <column name="IsCalculate" length="1" sql-type="bit" not-null="false"/>
+    </property>
+    <property name="Active" type="Boolean">
+      <column name="Active" length="1" sql-type="bit" not-null="false"/>
+    </property>
+    <property name="CreatedDate" type="DateTime">
+      <column name="CreatedDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <property name="ModifiedDate" type="DateTime">
+      <column name="ModifiedDate" length="8" sql-type="datetime" not-null="false"/>
+    </property>
+    <bag name="BettingUserses" inverse="true" lazy="true" cascade="all-delete-orphan">
+      <key column="BettingID"/>
+      <one-to-many class="TNGames.Core.Domain.BettingUser, TNGames.Core"/>
+    </bag>
+    <bag name="BettingRateses" inverse="true" lazy="true" cascade="all-delete-orphan" order-by="[Order] asc" >
+      <key column="BettingID"/>
+      <one-to-many class="TNGames.Core.Domain.BettingRate, TNGames.Core"/>
+    </bag>
+  </class>
+</hibernate-mapping>
