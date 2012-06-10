@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.BettingUserDetail, TNGames.Core" table="BettingUserDetails">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="BettingUserDetailID" length="4" sql-type="int" not-null="true" unique="true" index="PK_BettingUserDetails"/>
+			<generator class="native" />
+		</id>
+		<property name="BettingPoint" type="Int32">
+			<column name="BettingPoint" length="4" sql-type="int" not-null="false"/>
+		</property>
+    <property name="SelectedTeam" type="String">
+      <column name="SelectedTeam" length="150" sql-type="nvarchar" not-null="false"/>
+    </property>
+		<many-to-one name="BettingUser" class="TNGames.Core.Domain.BettingUser, TNGames.Core">
+			<column name="BettingUserID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="BettingRate" class="TNGames.Core.Domain.BettingRate, TNGames.Core">
+			<column name="BettingRateID" length="4" sql-type="int" not-null="false"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

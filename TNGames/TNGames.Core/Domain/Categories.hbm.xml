@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="TNGames.Core.Domain.Category, TNGames.Core" table="Categories">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="CategoryID" length="4" sql-type="int" not-null="true" unique="true" index="PK_Categories"/>
+			<generator class="native" />
+		</id>
+		<property name="CategoryAlias" type="String">
+			<column name="CategoryAlias" length="150" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="CategoryName" type="String">
+			<column name="CategoryName" length="150" sql-type="nvarchar" not-null="false"/>
+		</property>
+		<property name="Description" type="String">
+			<column name="Description"  sql-type="ntext" not-null="false"/>
+		</property>
+		<bag name="Newses" inverse="true" lazy="true" cascade="all-delete-orphan">
+			<key column="CategoryID"/>
+			<one-to-many class="TNGames.Core.Domain.New, TNGames.Core"/>
+		</bag>
+	</class>
+</hibernate-mapping>

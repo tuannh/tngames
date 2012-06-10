@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="TNGames.MaterPages.Home" %>
+
+<%@ Register Src="../Controls/FrontEnd/Skin-GeneralNotice.ascx" TagName="Skin" TagPrefix="uc1" %>
+<%@ Register src="../Controls/FrontEnd/Skin-Login-Home.ascx" tagname="Skin" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/styles/game_web.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/images/TNO.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="1024" align="center" cellpadding="0" cellspacing="0" class="border">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="top">
+                    <tr>
+                        <td class="logo">
+                            <a title="Trang chủ" href="/" class="home">Home</a>
+                        </td>
+                        <td align="center" valign="middle" class="backgroundtop">
+                            <uc1:Skin ID="Skin1" ContentTypeId="10" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" class="content">               
+      
+                
+                
+                <uc3:Skin ID="Skin2" runat="server" />
+      
+                
+                
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="10" id="content">
+                    <tr>
+                        <td width="250" valign="top">
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderLeft" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td valign="top">
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderCenter" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td width="308" valign="top">
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderRight" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="bottom">
+                    <tr>
+                         <td height="30" class="menubottom" style="padding-right: 5px;">
+                            <a href="/gop-y-phan-hoi">Gói ý/ Phản hồi</a><a href="#">Đường dây nóng</a><a href="#">
+                                Liên hệ quảng cáo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" class="backgroundbottom1">
+                            <p>
+                                © Copyright 2012 HVT Tech Co., All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32498780-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</body>
+</html>

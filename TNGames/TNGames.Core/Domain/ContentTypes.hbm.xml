@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TNGames.Core.Domain.ContentType, TNGames.Core" table="ContentTypes">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="ContentTypeID" length="4" sql-type="int" not-null="true" unique="true" index="PK_ContentTypes"/>
+      <generator class="native" />
+    </id>
+    <property name="ContentTypeName" type="String">
+      <column name="ContentTypeName" length="150" sql-type="nvarchar" not-null="false"/>
+    </property>
+    <property name="IsBanner" type="Boolean">
+      <column name="IsBanner" length="1" sql-type="bit" not-null="false"/>
+    </property>
+    <bag name="Contentses" inverse="true" lazy="true" cascade="all-delete-orphan">
+      <key column="ContentTypeID"/>
+      <one-to-many class="TNGames.Core.Domain.Content, TNGames.Core"/>
+    </bag>
+  </class>
+</hibernate-mapping>

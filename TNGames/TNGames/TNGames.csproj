@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66104D23-16CF-415E-AF42-8C958D5763EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TNGames</RootNamespace>
+    <AssemblyName>TNGames</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder, Version=2.2.0.1326, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache2">
+      <HintPath>..\Lib\NHibernate.Caches.SysCache2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpZipLib">
+      <HintPath>..\Lib\SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminCP\Default.aspx" />
+    <Content Include="Controls\Admin\Banner.ascx" />
+    <Content Include="Controls\Admin\BettingEdit.ascx" />
+    <Content Include="Controls\Admin\BettingGameSettings.ascx" />
+    <Content Include="Controls\Admin\BettingList.ascx" />
+    <Content Include="Controls\Admin\ChangePassword.ascx" />
+    <Content Include="Controls\Admin\DashBoard.ascx" />
+    <Content Include="Controls\Admin\NewsEdit.ascx" />
+    <Content Include="Controls\Admin\NewsList.ascx" />
+    <Content Include="Controls\Admin\Notice.ascx" />
+    <Content Include="Controls\Admin\PredictionEdit.ascx" />
+    <Content Include="Controls\Admin\PredictionGameSettings.ascx" />
+    <Content Include="Controls\Admin\PredictionList.ascx" />
+    <Content Include="Controls\Admin\QuestionEdit.ascx" />
+    <Content Include="Controls\Admin\QuestionGameSettings.ascx" />
+    <Content Include="Controls\Admin\QuestionList.ascx" />
+    <Content Include="Controls\Admin\Settings.ascx" />
+    <Content Include="Controls\Admin\UserEdit.ascx" />
+    <Content Include="Controls\Admin\UserGames.ascx" />
+    <Content Include="Controls\Admin\UserList.ascx" />
+    <Content Include="Controls\Admin\UserLogs.ascx" />
+    <Content Include="Controls\FrontEnd\ActiveAccount.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-Login-Home.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-BettingGame.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-BettingWinBoards.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-GameList.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-GeneralNotice.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-GeneralRanking.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-MyAchievement.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-News.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-NewsDetail.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-NoticeDetail.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-QuestionWinBoards.ascx" />
+    <Content Include="Controls\FrontEnd\ForgotPassword.ascx" />
+    <Content Include="Controls\FrontEnd\Login.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-PredictionGame.ascx" />
+    <Content Include="Controls\FrontEnd\Profile.ascx" />
+    <Content Include="Controls\FrontEnd\Register.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-PredictionWinBoards.ascx" />
+    <Content Include="Controls\FrontEnd\Skin-QuestionGame.ascx" />
+    <Content Include="Controls\FrontEnd\UserInfo.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FrontEnd\Active.aspx" />
+    <Content Include="FrontEnd\Contact.aspx" />
+    <Content Include="FrontEnd\Feedback.aspx" />
+    <Content Include="FrontEnd\ForgotPassword.aspx" />
+    <Content Include="FrontEnd\Login.aspx" />
+    <Content Include="FrontEnd\News.aspx" />
+    <Content Include="FrontEnd\NewsDetail.aspx" />
+    <Content Include="FrontEnd\Notice.aspx" />
+    <Content Include="FrontEnd\Register.aspx" />
+    <Content Include="FrontEnd\User\Account.aspx" />
+    <Content Include="FrontEnd\User\Achievement.aspx" />
+    <Content Include="FrontEnd\User\Betting.aspx" />
+    <Content Include="FrontEnd\User\Prediction.aspx" />
+    <Content Include="FrontEnd\User\Question.aspx" />
+    <Content Include="FrontEnd\User\Submit.aspx" />
+    <Content Include="Scripts\global.js" />
+    <Content Include="Scripts\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\jquery.hoverAccordionMenu.js" />
+    <Content Include="Scripts\jquery.hoverIntent.js" />
+    <Content Include="Styles\games_admin.css" />
+    <Content Include="Styles\game_web.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\jquery.fancybox-1.3.4.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCP\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\BettingGameSettings.ascx.cs">
+      <DependentUpon>BettingGameSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\BettingGameSettings.ascx.designer.cs">
+      <DependentUpon>BettingGameSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\Notice.ascx.cs">
+      <DependentUpon>Notice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\Notice.ascx.designer.cs">
+      <DependentUpon>Notice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserGames.ascx.cs">
+      <DependentUpon>UserGames.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserGames.ascx.designer.cs">
+      <DependentUpon>UserGames.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserLogs.ascx.cs">
+      <DependentUpon>UserLogs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserLogs.ascx.designer.cs">
+      <DependentUpon>UserLogs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Check.cs" />
+    <Compile Include="Controls\Admin\BettingEdit.ascx.cs">
+      <DependentUpon>BettingEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\BettingEdit.ascx.designer.cs">
+      <DependentUpon>BettingEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\BettingList.ascx.cs">
+      <DependentUpon>BettingList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\BettingList.ascx.designer.cs">
+      <DependentUpon>BettingList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\DashBoard.ascx.cs">
+      <DependentUpon>DashBoard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\DashBoard.ascx.designer.cs">
+      <DependentUpon>DashBoard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\NewsEdit.ascx.cs">
+      <DependentUpon>NewsEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\NewsEdit.ascx.designer.cs">
+      <DependentUpon>NewsEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\NewsList.ascx.cs">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\NewsList.ascx.designer.cs">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionEdit.ascx.cs">
+      <DependentUpon>PredictionEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionEdit.ascx.designer.cs">
+      <DependentUpon>PredictionEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionGameSettings.ascx.cs">
+      <DependentUpon>PredictionGameSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionGameSettings.ascx.designer.cs">
+      <DependentUpon>PredictionGameSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionList.ascx.cs">
+      <DependentUpon>PredictionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PredictionList.ascx.designer.cs">
+      <DependentUpon>PredictionList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionEdit.ascx.cs">
+      <DependentUpon>QuestionEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionEdit.ascx.designer.cs">
+      <DependentUpon>QuestionEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionGameSettings.ascx.cs">
+      <DependentUpon>QuestionGameSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionGameSettings.ascx.designer.cs">
+      <DependentUpon>QuestionGameSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionList.ascx.cs">
+      <DependentUpon>QuestionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\QuestionList.ascx.designer.cs">
+      <DependentUpon>QuestionList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserEdit.ascx.cs">
+      <DependentUpon>UserEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserEdit.ascx.designer.cs">
+      <DependentUpon>UserEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserList.ascx.cs">
+      <DependentUpon>UserList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserList.ascx.designer.cs">
+      <DependentUpon>UserList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Captcha.cs" />
+    <Compile Include="Controls\FrontEnd\ActiveAccount.ascx.cs">
+      <DependentUpon>ActiveAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\ActiveAccount.ascx.designer.cs">
+      <DependentUpon>ActiveAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-Login-Home.ascx.cs">
+      <DependentUpon>Skin-Login-Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-Login-Home.ascx.designer.cs">
+      <DependentUpon>Skin-Login-Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-BettingGame.ascx.cs">
+      <DependentUpon>Skin-BettingGame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-BettingGame.ascx.designer.cs">
+      <DependentUpon>Skin-BettingGame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-BettingWinBoards.ascx.cs">
+      <DependentUpon>Skin-BettingWinBoards.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-BettingWinBoards.ascx.designer.cs">
+      <DependentUpon>Skin-BettingWinBoards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GameList.ascx.cs">
+      <DependentUpon>Skin-GameList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GameList.ascx.designer.cs">
+      <DependentUpon>Skin-GameList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GeneralNotice.ascx.cs">
+      <DependentUpon>Skin-GeneralNotice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GeneralNotice.ascx.designer.cs">
+      <DependentUpon>Skin-GeneralNotice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GeneralRanking.ascx.cs">
+      <DependentUpon>Skin-GeneralRanking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-GeneralRanking.ascx.designer.cs">
+      <DependentUpon>Skin-GeneralRanking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-MyAchievement.ascx.cs">
+      <DependentUpon>Skin-MyAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-MyAchievement.ascx.designer.cs">
+      <DependentUpon>Skin-MyAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-News.ascx.cs">
+      <DependentUpon>Skin-News.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-News.ascx.designer.cs">
+      <DependentUpon>Skin-News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-NewsDetail.ascx.cs">
+      <DependentUpon>Skin-NewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-NewsDetail.ascx.designer.cs">
+      <DependentUpon>Skin-NewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-NoticeDetail.ascx.cs">
+      <DependentUpon>Skin-NoticeDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-NoticeDetail.ascx.designer.cs">
+      <DependentUpon>Skin-NoticeDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-QuestionWinBoards.ascx.cs">
+      <DependentUpon>Skin-QuestionWinBoards.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-QuestionWinBoards.ascx.designer.cs">
+      <DependentUpon>Skin-QuestionWinBoards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\ForgotPassword.ascx.cs">
+      <DependentUpon>ForgotPassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\ForgotPassword.ascx.designer.cs">
+      <DependentUpon>ForgotPassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-PredictionGame.ascx.cs">
+      <DependentUpon>Skin-PredictionGame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-PredictionGame.ascx.designer.cs">
+      <DependentUpon>Skin-PredictionGame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-PredictionWinBoards.ascx.cs">
+      <DependentUpon>Skin-PredictionWinBoards.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-PredictionWinBoards.ascx.designer.cs">
+      <DependentUpon>Skin-PredictionWinBoards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-QuestionGame.ascx.cs">
+      <DependentUpon>Skin-QuestionGame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\Skin-QuestionGame.ascx.designer.cs">
+      <DependentUpon>Skin-QuestionGame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\UserInfo.ascx.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FrontEnd\UserInfo.ascx.designer.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Active.aspx.cs">
+      <DependentUpon>Active.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Active.aspx.designer.cs">
+      <DependentUpon>Active.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Achievement.aspx.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Achievement.aspx.designer.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Betting.aspx.cs">
+      <DependentUpon>Betting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Betting.aspx.designer.cs">
+      <DependentUpon>Betting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Prediction.aspx.cs">
+      <DependentUpon>Prediction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Prediction.aspx.designer.cs">
+      <DependentUpon>Prediction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Question.aspx.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Question.aspx.designer.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User\Submit.aspx.cs">
+      <DependentUpon>Submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User\Submit.aspx.designer.cs">
+      <DependentUpon>Submit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPages\AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPages\AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPages\BettingGame.Master.cs">
+      <DependentUpon>BettingGame.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPages\BettingGame.Master.designer.cs">
+      <DependentUpon>BettingGame.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPages\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPages\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPages\QuestionGame.Master.cs">
+      <DependentUpon>QuestionGame.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPages\QuestionGame.Master.designer.cs">
+      <DependentUpon>QuestionGame.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterPages\Register.Master.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterPages\Register.Master.designer.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nhibernate.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TNGames.Controls\TNGames.Controls.csproj">
+      <Project>{DB0F6A65-7B49-47C6-B4E3-48C7A6307B86}</Project>
+      <Name>TNGames.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TNGames.Core\TNGames.Core.csproj">
+      <Project>{35430651-8526-46AD-97AA-3057DE688D68}</Project>
+      <Name>TNGames.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaterPages\AdminSite.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaterPages\Register.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaterPages\Home.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaterPages\QuestionGame.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MaterPages\BettingGame.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2095</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://tngame.localhost.vn</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
