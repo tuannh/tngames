@@ -119,16 +119,9 @@
 
             Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
             function pageLoaded() {
-//                $('#btnSubmit').click(function () {
-//                    $(this).attr("disabled", true);
-//                })
-
                 $('.last').click(function () {
-                    if ($('#radList :radio[checked=true]').length > 0) {
-                        if (interval)
-                            clearInterval(interval);
-                        $(this).attr("disabled", true);
-                    }
+                    if (interval)
+                        clearInterval(interval);
                 })
 
                 $('#radList label').each(function (i, e) {
