@@ -137,8 +137,10 @@
         Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
         function pageLoaded() {
             $('.last').click(function () {
-                if (interval)
-                    clearInterval(interval);
+                if ($('#radList :radio[checked=true]').length > 0) {
+                    if (interval)
+                        clearInterval(interval);
+                }
             })
 
             $('#radList label').each(function (i, e) {
