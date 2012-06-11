@@ -65,6 +65,13 @@ namespace TNGames.Controls.FrontEnd
                 user.ActiveCode = code;
                 user.Point = TNHelper.GetSettings().DefaultPoint;
 
+                if (user.Point == 0)
+                {
+                    TNHelper.LogError("Không lấy được điểm khởi tạo. Khởi tạo lại điểm mặc định.", "Error get GetSettings object");
+                    user.Point = new BizSettings().DefaultPoint;
+                }
+
+
                 if (DomainManager.Insert(user))
                 {
                     bool isSent = SendActiveEmail(user, code);

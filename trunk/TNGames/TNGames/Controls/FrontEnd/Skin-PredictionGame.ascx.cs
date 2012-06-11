@@ -220,13 +220,19 @@ namespace TNGames.Controls.FrontEnd
 
                 if (PredictionGameUser is PredictionGameUser)
                 {
-                    UpdateAnswer(pgu);
-                    TNHelper.LogAction(LogType.PredictionLog, string.Format("Cập nhận đáp án cho bộ đề <b>{0}</b>", pgu.PredictionGame.PredictionGameName));
+                    if (pgu.PredictionGame != null)
+                    {
+                        UpdateAnswer(pgu);
+                        TNHelper.LogAction(LogType.PredictionLog, string.Format("Cập nhận đáp án cho bộ đề <b>{0}</b>", pgu.PredictionGame.PredictionGameName));
+                    }
                 }
                 else
                 {
-                    DomainManager.Insert(pgu);
-                    TNHelper.LogAction(LogType.PredictionLog, "Chơi thử tài dự đoán");
+                    if (pgu.PredictionGame != null)
+                    {
+                        DomainManager.Insert(pgu);
+                        TNHelper.LogAction(LogType.PredictionLog, "Chơi game thử tài dự đoán");
+                    }
                 }
 
                 // remove all relate cache

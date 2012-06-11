@@ -181,18 +181,20 @@ namespace TNGames.Controls.FrontEnd
                 }
 
                 qu.WinPoint = bonusPoint;
-                DomainManager.Insert(qu);
+                if (qu.QuestionGame != null)
+                {
+                    DomainManager.Insert(qu);
 
-                curenttUser.PointQuestion += bonusPoint; // cộng vào tổng điểm của game trả lời câu hỏi
-                curenttUser.Point += bonusPoint; // cộng điểm thưởng vào tổng điểm của game cá cược
+                    curenttUser.PointQuestion += bonusPoint; // cộng vào tổng điểm của game trả lời câu hỏi
+                    curenttUser.Point += bonusPoint; // cộng điểm thưởng vào tổng điểm của game cá cược
 
-                DomainManager.Insert(curenttUser);
-                Utils.ResetCurrentUser();
-                if (bonusPoint == 0)
-                    TNHelper.LogAction(LogType.QuestionLog, "Chơi game thử tài kiến thức");
-                else
-                    TNHelper.LogAction(LogType.QuestionLog, string.Format("Cộng {0} điểm thưởng vào tổng điểm game thử tài kiến thức.<br/>Cộng {0} điểm thưởng vào tổng điểm game phân tích trận đấu", bonusPoint));
-
+                    DomainManager.Insert(curenttUser);
+                    Utils.ResetCurrentUser();
+                    if (bonusPoint == 0)
+                        TNHelper.LogAction(LogType.QuestionLog, "Chơi game thử tài kiến thức");
+                    else
+                        TNHelper.LogAction(LogType.QuestionLog, string.Format("Cộng {0} điểm thưởng vào tổng điểm game thử tài kiến thức.<br/>Cộng {0} điểm thưởng vào tổng điểm game phân tích trận đấu", bonusPoint));
+                }
                 // remove all relate cache
                 CMSCache.RemoveByPattern(hfCache.Value);
             }

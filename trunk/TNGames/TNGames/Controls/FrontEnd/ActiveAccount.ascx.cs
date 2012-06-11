@@ -25,7 +25,7 @@ namespace TNGames.Controls.FrontEnd
                     user.ActiveCode = string.Empty;
                     DomainManager.Update(user);
                     Utils.ShowMessage(lblMsg, "Tài khoản của bạn được kích hoạt thành công.\nBạn có thể đăng nhập tài khỏan của bạn <a href='/dang-nhap'>tại đây</a>");
-                    TNHelper.LogAction(LogType.UserLog, "Kích hoạt tài khoản thành công");
+                    TNHelper.LogAction(user, LogType.UserLog, "Kích hoạt tài khoản thành công");
                 }
                 else
                     lblMsg.Text = "Mã kích hoạt không đúng. Bạn hãy liên hệ với quản trị website để được trợ giúp.";

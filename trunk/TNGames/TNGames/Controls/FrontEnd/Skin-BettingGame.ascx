@@ -112,20 +112,31 @@
 //<![CDATA[
     $('.bname').each(function () {
         //$(this).next().slideToggle();
-        $(this).fancybox({
-        //  'hideOnContentClick': false
-            onStart: hideFlash,
-            onClosed: showFlash
+        $(this).fancybox({
+
+        //  'hideOnContentClick': false
+
+            onStart: hideFlash,
+
+            onClosed: showFlash
+
         });
     })
 
- function hideFlash() {
-        $('embed, object, iframe').css('visibility', 'hidden');
-    }
-    function showFlash() {
-        $('embed, object, iframe').css({ 'visibility': 'visible' });
-    }
-
+ function hideFlash() {
+
+        $('embed, object, iframe').css('visibility', 'hidden');
+
+    }
+
+    function showFlash() {
+
+        $('embed, object, iframe').css({ 'visibility': 'visible' });
+
+    }
+
+
+
 
     $('.bettingTeam label input').click(function () {
         var rId = $(this).next().html();
@@ -184,7 +195,7 @@
             return false;
         }
 
-        var cp = parseInt($('#cpoint').html());
+        var cp = parseInt( $('#cpoint').html().replace(/,/g, '') );
         if (cp < parseInt(p)) {
             alert('Số điểm phải nhỏ hơn hoặc bằng số điểm hiện có.\nSố điểm hiện tại của bạn ' + cp);
             return false;

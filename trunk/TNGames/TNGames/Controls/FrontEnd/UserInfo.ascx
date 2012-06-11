@@ -9,10 +9,9 @@
                         title="Thông tin các game đã chơi và số điểm"><img src="/images/web/core_icon.png"
                             width="16" height="16" /></a>
             <div style="text-align: left;">
-                Tổng điểm: <span id="totalPoint">
-                    <%= TNGames.Core.Helper.Utils.GetCurrentUser().TotalPoint.ToString("N0") %></span>
-                <span id="cpoint" class="invisible">
-                    <%= TNGames.Core.Helper.Utils.GetCurrentUser().Point.ToString("N0") %></span>
+                Tổng điểm: <span id="totalPoint"><%= TNGames.Core.Helper.Utils.GetCurrentUser().TotalPoint.ToString("N0") %></span>
+                    | Điểm phân tích:
+                <span id="cpoint"><%= TNGames.Core.Helper.Utils.GetCurrentUser().Point.ToString("N0") %></span>
                 <% if (TNGames.Core.Helper.Utils.GetCurrentUser().IsAdmin)
                    { %>
                 <br />

@@ -53,6 +53,7 @@ namespace TNGames.Controls.FrontEnd
                         DomainManager.Update(user);
                         Utils.ResetCurrentUser();
                         Utils.ShowMessage(lblMsg, string.Format("Mật khẩu mới đã được gởi vào địa chỉ email <b>{0}</b>", email));
+                        TNHelper.LogAction(user, LogType.UserLog, "Reset mật khẩu");
                     }
                     else
                     {
@@ -60,6 +61,7 @@ namespace TNGames.Controls.FrontEnd
                         DomainManager.Update(user);
                         Utils.ResetCurrentUser();
                         Utils.ShowMessage(lblMsg, "Gởi mật khẩu không thành công. Bạn hãy thử lại sau.");
+                        TNHelper.LogAction(user, LogType.UserLog, "Reset mật khẩu không thành công.");
                     }
                 }
             }
