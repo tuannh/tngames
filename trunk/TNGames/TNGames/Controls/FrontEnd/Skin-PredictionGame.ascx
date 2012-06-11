@@ -23,9 +23,7 @@
 </table>
 <asp:Label ID="lblMsg" runat="server" ForeColor="#00FF00" />
 <div id="prePlayedInfo" runat="server" class="PlayedInfo">
-    <span style="color: #FFF;">Bạn đã tham gia trò chơi thử tài dự đoán. Bạn muốn cập nhật
-        đáp án?</span><br />
-    <br />
+    <span style="color: #FFF;">Bạn đã tham gia trò chơi thử tài dự đoán. Bạn muốn cập nhật đáp án?</span><br /><br />
     <input id="ok" type="button" value="Đồng ý" class="buttonL" />
     <input type="button" value="Thoát" class="buttonL" onclick="location.href='/'" />
 </div>
@@ -139,11 +137,8 @@
         Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
         function pageLoaded() {
             $('.last').click(function () {
-                if ($('#radList :radio[checked=true]').length > 0) {
-                    if (interval)
-                        clearInterval(interval);
-                    $(this).attr("disabled", true);
-                }
+                if (interval)
+                    clearInterval(interval);
             })
 
             $('#radList label').each(function (i, e) {
@@ -205,14 +200,15 @@
 //]]>
     </script>
 </div>
-<script type="text/javascript">
+
+ <script type="text/javascript">
 //<![CDATA[
 
-    $('#ok').click(function () {
-        $('.PlayedInfo').hide();
-        $('.btnStart').click();
-        $('.pregame').slideDown();
-    }) 
+     $('#ok').click(function () {
+         $('.PlayedInfo').hide();
+         $('.btnStart').click();
+         $('.pregame').slideDown();
+     }) 
        
 //]]>
 </script>
