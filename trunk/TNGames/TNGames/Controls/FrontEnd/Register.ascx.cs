@@ -76,7 +76,7 @@ namespace TNGames.Controls.FrontEnd
                         lblMsg.ForeColor = Color.Red;
                     }
 
-                    TNHelper.LogAction(LogType.UserLog, "Đăng ký tài khoản");
+                    TNHelper.LogAction(user, LogType.UserLog, "Đăng ký tài khoản");
                     pnlRegister.Visible = false;
                 }
                 else
