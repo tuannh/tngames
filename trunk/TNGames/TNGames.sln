@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNGames.Core", "TNGames.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNGames.Controls", "TNGames.Controls\TNGames.Controls.csproj", "{DB0F6A65-7B49-47C6-B4E3-48C7A6307B86}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{78D28919-BFF3-44C0-A61F-43032224C216}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\AjaxControlToolkit.dll = Lib\AjaxControlToolkit.dll
+		Lib\CKFinder.dll = Lib\CKFinder.dll
+		Lib\Iesi.Collections.dll = Lib\Iesi.Collections.dll
+		Lib\NHibernate.Caches.SysCache2.dll = Lib\NHibernate.Caches.SysCache2.dll
+		Lib\NHibernate.dll = Lib\NHibernate.dll
+		Lib\SharpZipLib.dll = Lib\SharpZipLib.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
