@@ -19,6 +19,7 @@ namespace TNGames.Controls.FrontEnd
             {
                 LoadDefaultData();
             }
+
         }
 
         private void LoadDefaultData()
