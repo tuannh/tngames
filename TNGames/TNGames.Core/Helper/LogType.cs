@@ -10,6 +10,7 @@ namespace TNGames.Core.Helper
         UserLog = 1,
         BettingLog = 2,
         PredictionLog = 3,
-        QuestionLog = 4
+        QuestionLog = 4,
+        Error = 5
     }
 }

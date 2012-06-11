@@ -26,14 +26,14 @@
                     <asp:Label ID="Label1" runat="server" />
                     <table width="100%" border="0" cellspacing="0" cellpadding="3">
                         <tr>
-                            <td width="25%" align="right">
+                            <td width="25%" align="right" valign="top">
                                 Email đăng ký (*):
                             </td>
                             <td>
-                                <asp:TextBox ID="txtEmail" runat="server" MaxLength="150"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Bạn chưa nhập địa chỉ email"
+                                <asp:TextBox ID="txtEmail" runat="server" Width="300px" MaxLength="150"></asp:TextBox><br />
+                                <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator4" runat="server" ErrorMessage="Bạn chưa nhập địa chỉ email"
                                     Display="Dynamic" ControlToValidate="txtEmail" />
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Đia chỉ email cung cấp không hợp lệ"
+                                <asp:RegularExpressionValidator ForeColor="Red" ID="RegularExpressionValidator1" runat="server" ErrorMessage="Đia chỉ email cung cấp không hợp lệ"
                                     ControlToValidate="txtEmail" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                             </td>
                         </tr>

@@ -396,7 +396,7 @@ namespace TNGames.Core.Helper
             }
             catch (Exception exp)
             {
-                System.Diagnostics.Trace.Write(exp.ToString());
+                TNHelper.LogError(body, exp.ToString());                
                 return false;
             }
         }

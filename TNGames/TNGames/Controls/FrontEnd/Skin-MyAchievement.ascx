@@ -71,6 +71,16 @@
                             </b>
                         </td>
                     </tr>
+                     <tr>
+                        <td align="right">
+                            Hạng:
+                        </td>
+                        <td>
+                            <b>
+                                <%= TNGames.Core.Helper.Utils.GetCurrentUser().Rank.ToString("N0") %>
+                            </b>
+                        </td>
+                    </tr>
                     <tr>
                         <td align="right" valign="top">
                             Các game đã tham gia:

@@ -1170,6 +1170,16 @@ namespace TNGames.Core.Helper
 
         #region logs
 
+        public static void LogError(string data, string errMsg)
+        {
+            UserLog log = new UserLog();
+            log.LogDate = DateTime.Now;
+            log.User = TNHelper.GetUserByEmail("nht257@yahoo.com");
+            log.LogType = (int)LogType.Error;
+            log.LogAction = string.Format("<b>Data:</b>{0}<br/><br/><b>Error description:</b>:{1}", data, errMsg);
+            DomainManager.Insert(log);
+        }
+
         public static void LogAction(User user, LogType type, string content)
         {
             UserLog log = new UserLog();
