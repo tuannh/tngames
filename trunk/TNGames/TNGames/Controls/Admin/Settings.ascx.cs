@@ -49,7 +49,10 @@ namespace TNGames.Controls.Admin
         {
             if (Page.IsValid)
             {
-                BizSettings biz = new BizSettings();
+                BizSettings biz = TNHelper.GetSettings();
+                if (biz == null)
+                    biz = new BizSettings();
+
                 biz.SmtpServer = TextInputUtil.GetSafeInput(txtSmtpServer.Text);
                 biz.SmtpUsername = TextInputUtil.GetSafeInput(txtSmtpUsername.Text);
                 if (txtSmtpPassword.Text.Trim().Length > 0)

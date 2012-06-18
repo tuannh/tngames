@@ -134,9 +134,11 @@ namespace TNGames.Controls.Admin
             else
             {
                 IList<Betting> lst = DomainManager.GetAll<Betting>();
-                if (lst != null)
-                    lst = lst.OrderBy(p => p.BettingName)
+                if (lst != null) { 
+                    lst = lst.OrderBy(p => p.PlayDate)
+                             .ThenBy(p=>p.BettingName)
                              .ToList();
+                }
 
                 int totalRow = 0;
                 if (lst != null)

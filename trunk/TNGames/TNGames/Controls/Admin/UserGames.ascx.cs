@@ -220,9 +220,19 @@ namespace TNGames.Controls.Admin
                 {
                     if (bu.Betting != null && bu.Betting.IsCalculate && bu.BettingUserDetailses.Count > 0)
                     {
-                        int point = bu.WinPoint - (bu.BettingUserDetailses[0] as BettingUserDetail).BettingPoint;
-                        point = (point < 0 ? 0 : point);
-                        litWinPoint.Text = point.ToString("N0");
+                        int bettingPoint = (bu.BettingUserDetailses[0] as BettingUserDetail).BettingPoint;
+                        int point = bu.WinPoint - bettingPoint;
+                        float percent = ((float)point / bettingPoint) * 100;
+                        if (percent < 0)
+                            percent = Math.Abs(percent);
+
+                        // point = (point < 0 ? 0 : point);
+                        if (point == 0)
+                            litWinPoint.Text = string.Format("<span title='Bạn được trả lại {1} điểm đã đặt'>{0}</span>", point.ToString("N0"), bettingPoint.ToString("N0"));
+                        else if (point > 0)
+                            litWinPoint.Text = string.Format("<span title='Bạn được thưởng {1}% số điểm đã đặt'>{0}</span>", point.ToString("N0"), percent.ToString("N0"));
+                        else
+                            litWinPoint.Text = string.Format("<span title='Bạn bị mất {1}% số điểm đã đặt'>{0}</span>", point.ToString("N0"), percent.ToString("N0"));
                     }
                     else
                         litWinPoint.Text = "Đang cập nhật";
