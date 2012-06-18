@@ -337,12 +337,12 @@ namespace TNGames.Core.Helper
                             {
                                 if (x - n == 1 && m == 0.75f)
                                 {
-                                    // kèo dưới thắng nữa tiền
+                                    // kèo dưới thua nữa tiền
                                     if (string.Compare(detail.SelectedTeam, betting.VisitingTeam, true) == 0)
-                                        point += detail.BettingPoint + (detail.BettingPoint / 2);
-                                    else
-                                        // kèo trên thua nữa tiền
                                         point += (detail.BettingPoint / 2);
+                                    else
+                                        // kèo trên thắng nữa tiền
+                                        point += detail.BettingPoint + (detail.BettingPoint / 2);
                                 }
                                 else
                                 {
@@ -442,12 +442,12 @@ namespace TNGames.Core.Helper
                             {
                                 if (x - n == 1 && m == 0.75f)
                                 {
-                                    // kèo dưới thắng nữa tiền
+                                    // kèo dưới thua nữa tiền
                                     if (string.Compare(detail.SelectedTeam, betting.HomeTeam, true) == 0)
-                                        point += detail.BettingPoint + (detail.BettingPoint / 2);
-                                    else
-                                        // kèo trên thua nữa tiền
                                         point += (detail.BettingPoint / 2);
+                                    else
+                                        // kèo trên thắng nữa tiền
+                                        point += detail.BettingPoint + (detail.BettingPoint / 2); 
                                 }
                                 else
                                 {
