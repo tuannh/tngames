@@ -77,7 +77,7 @@
                                                                     SỐ ĐIỂM
                                                                 </div>
                                                                 <div class="scorePoint">
-                                                                    <asp:TextBox ID="txtPoint" runat="server" CssClass="txtPoint" MaxLength="5" ValidationGroup='<%# "Group" + Eval("Id") %>' />
+                                                                    <asp:TextBox ID="txtPoint" runat="server" CssClass="txtPoint" MaxLength="10" ValidationGroup='<%# "Group" + Eval("Id") %>' />
                                                                     <%--  <asp:RequiredFieldValidator ID="rfv" runat="server" ErrorMessage="*" ControlToValidate="txtPoint"
                                                 ForeColor="Red" ValidationGroup='<%# "Group" + Eval("Id") %>' />--%>
                                                                     <act:FilteredTextBoxExtender ID="ftx" runat="server" FilterType="Numbers" TargetControlID="txtPoint" />
