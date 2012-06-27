@@ -28,7 +28,7 @@
                                 Họ và Tên (*):
                             </td>
                             <td>
-                                <asp:TextBox ID="txtFullName" ValidationGroup="info" runat="server" MaxLength="150" />
+                                <asp:TextBox ID="txtFullName" ValidationGroup="info" runat="server" MaxLength="50" />
                                 <asp:RequiredFieldValidator ValidationGroup="info" ForeColor="Red" ID="RequiredFieldValidator1"
                                     runat="server" ErrorMessage="Bạn chưa nhập họ và tên" ControlToValidate="txtFullName" />
                             </td>
@@ -38,7 +38,7 @@
                                 Tên hiển thị (*):
                             </td>
                             <td>
-                                <asp:TextBox ID="txtDisplayName" ValidationGroup="info" runat="server" MaxLength="150"></asp:TextBox>
+                                <asp:TextBox ID="txtDisplayName" ValidationGroup="info" runat="server" MaxLength="20"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
