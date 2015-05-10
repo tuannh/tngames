@@ -1,0 +1,7 @@
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\bin\Debug\TNGames.Core.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\bin\Debug\TNGames.Core.pdb
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\bin\Debug\NHibernate.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\bin\Debug\Iesi.Collections.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\obj\Debug\TNGames.Core.csprojResolveAssemblyReference.cache
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\obj\Debug\TNGames.Core.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames.Core\obj\Debug\TNGames.Core.pdb

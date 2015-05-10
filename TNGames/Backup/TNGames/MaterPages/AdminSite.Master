@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite.master.cs"
+    Inherits="TNGames.AdminSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AdminCP -.:TN Games:.</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="/images/TNO.ico" type="image/vnd.microsoft.icon" />
+    <script src="/Scripts/global.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/utility/ckeditor/ckeditor.js" type="text/javascript"></script>
+    <script src="/utility/ckfinder/ckfinder.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.hoverIntent.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.hoverAccordionMenu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        if (typeof (CKFinder) != 'undefined') CKFinder.setupCKEditor(null, '/utility/ckfinder/');
+    //]]>
+    </script>
+    <link href="/styles/games_admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="top">
+                    <tr>
+                        <td class="logo">
+                            <a href="/admincp" class="home">Home</a>
+                        </td>
+                        <td class="backgroundtop">
+                            <div class="welcome">
+                                Xin chào:
+                                <asp:Literal ID="litWelcome" runat="server" />
+                                | <a href="/admincp/change-password">Đổi mật khẩu</a> | <a href="/dang-nhap?logout=true">
+                                    Đăng xuất</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="content">
+                    <tr>
+                        <td>
+                            <div class="menuMain">
+                                <ul class="adMenu">
+                                    <li><a href="/admincp">Hệ thống</a> </li>
+                                    <li><a href="/admincp/settings">Cấu hình</a></li>
+                                    <li><a href="javascript:void(0);">Game phân tích trận đấu</a>
+                                        <ul class="menu_game">
+                                            <li><a href="/admincp/betting-game-settings">Cấu hình</a></li>
+                                            <li><a href="/admincp/betting-edit">Thêm</a></li>
+                                            <li><a href="/admincp/betting-list">Danh sách</a></li>
+                                            <li><a href="/admincp/betting-list?isr=true">Xếp hạng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0);">Game thử tài dự đoán</a>
+                                        <ul class="menu_game">
+                                            <li><a href="/admincp/prediction-game-settings">Cấu hình</a></li>
+                                            <li><a href="/admincp/prediction-edit">Thêm</a></li>
+                                            <li><a href="/admincp/prediction-list">Danh sách</a></li>
+                                            <li><a href="/admincp/prediction-list?isr=true">Xếp hạng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0);">Game thử tài kiến thức</a>
+                                        <ul class="menu_game">
+                                            <li><a href="/admincp/question-game-settings">Cấu hình</a></li>
+                                            <li><a href="/admincp/question-edit">Thêm</a></li>
+                                            <li><a href="/admincp/question-list">Danh sách</a></li>
+                                            <li><a href="/admincp/question-list?isr=true">Xếp hạng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/admincp/user-list">Người chơi</a> </li>
+                                    <li><a href="javascript:void(0)">Tin tức</a>
+                                        <ul>
+                                            <li><a href="/admincp/news-edit">Thêm mới</a></li>
+                                            <li><a href="/admincp/news-list">Danh sách tin tức</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0)">Thông báo</a>
+                                        <ul style="min-width: 280px;">
+                                            <li><a href="/admincp/notice/7">Thông báo chung BTC</a></li>
+                                            <li><a href="/admincp/notice/5">Thông báo BTC game kiến thức</a></li>
+                                            <li><a href="/admincp/notice/1">Thông báo BTC game phân tích trận đấu</a></li>
+                                            <li><a href="/admincp/notice/3">Thông báo BTC game dự đoán</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="last" href="javascript:void(0)">Banner & CLIP</a>
+                                        <ul style="min-width: 235px;">
+                                            <li><a href="/admincp/banner/8">Banner các nhà tài trợ</a></li>
+                                            <li><a href="/admincp/banner/2">Các clip game phân tích trận đấu</a></li>
+                                            <li><a href="/admincp/banner/11">Banner game phân tích trận đấu</a></li>
+                                            <li><a href="/admincp/banner/4">Banner game dự đoán</a></li>
+                                            <li><a href="/admincp/banner/6">Banner game kiến thức</a></li>
+                                            <li><a href="/admincp/banner/9">Banner trang đăng ký</a></li>
+                                            <li><a href="/admincp/banner/10">Banner trang home (top)</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="min-height: 350px; padding: 10px;">
+                            <asp:ContentPlaceHolder ID="content" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="bottom">
+                    <tr>
+                        <td height="30" class="menubottom">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" class="backgroundbottom1">
+                            <p>
+                                © Copyright 2012 HVT Tech Co., All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script language="javascript" type="text/javascript">
+        //<![CDATA[
+        if (location.pathname == '/admincp/')
+            $('.adMenu>li:nth(0)').addClass('select');
+        else if (location.pathname.indexOf('/settings') > 0)
+            $('.adMenu>li:nth(1)').addClass('select');
+        else if (location.pathname.indexOf('/betting-') > 0)
+            $('.adMenu>li:nth(2)').addClass('select');
+        else if (location.pathname.indexOf('/prediction-') > 0)
+            $('.adMenu>li:nth(3)').addClass('select');
+        else if (location.pathname.indexOf('/question-') > 0)
+            $('.adMenu>li:nth(4)').addClass('select');
+        else if (location.pathname.indexOf('/user-') > 0)
+            $('.adMenu>li:nth(5)').addClass('select');
+        else if (location.pathname.indexOf('/news-') > 0)
+            $('.adMenu>li:nth(6)').addClass('select');
+        else if (location.pathname.indexOf('/notice') > 0)
+            $('.adMenu>li:nth(7)').addClass('select');
+        else if (location.search.indexOf('/banner') >= 0)
+            $('.adMenu>li:nth(8)').addClass('select');
+
+        $(document).ready(function () {
+            $(this).hoverAccordionMenu();
+        });
+        //]]>
+    </script>
+    </form>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32498780-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.dll.config
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.pdb
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\AjaxControlToolkit.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\CKFinder.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\Iesi.Collections.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\NHibernate.Caches.SysCache2.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\NHibernate.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\SharpZipLib.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.Controls.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.Core.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.Controls.pdb
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\bin\TNGames.Core.pdb
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\obj\Debug\TNGames.csprojResolveAssemblyReference.cache
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\obj\Debug\TNGames.dll
+D:\TuaNH\TuaN\Projects\2013\tngames\tngames\TNGames\TNGames\obj\Debug\TNGames.pdb

@@ -1,0 +1,410 @@
+body, td, th
+{
+	font-family: Arial;
+	font-size: 12px;
+}
+.bgtable
+{
+	font-family: Arial;
+	color: #333333;
+	background-color: #E4ECF2;
+	text-align: justify;
+}
+
+body
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #3e6984;
+}
+/* logothanhnien_adminpages*/
+.logo
+{
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	width: 351px;
+	height: 90px;
+}
+/*background_top */
+.backgroundtop
+{
+	background-image: url(../images/background_top.jpg);
+}
+/*background_bottom and menu bottom*/
+.menubottom
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.menubottom a:link
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.menubottom a:hover
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.menubottom a:visited
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.backgroundbottom1
+{
+	background-color: #B4D6DC;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	font-family: Arial;
+	color: #305367;
+	padding-right: 30px;
+}
+/*menu*/
+
+.menu
+{
+	background-color: #3e6984;
+	border-color: #9CC6D1;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+}
+.menu a:link
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu a:hover
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu a:visited
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+/* Content*/
+.content
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.content a:link
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.content a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.content a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* header*/
+.header
+{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Arial;
+	color: #900;
+}
+
+
+.contentbold
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-align: right;
+	padding-right: 10px;
+}
+
+/* header*/
+
+.header
+{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Arial;
+	color: #900;
+}
+/* drawtable */
+
+.headertable
+{
+	background-color: #4E86A7;
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	border: thin;
+	border-color: #3E6984;
+	color: #FFF;
+	text-align: center;
+}
+.Table
+{
+	font-size: 12px;
+	color: #000;
+	border-color: #3E6984;
+	background-color: #FFF;
+	border: thin;
+	font-family: Arial;
+	font-weight: bold;
+}
+/* pages*/
+.pages
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.pages a:link
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.pages a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	color: #999;
+	font-weight: bold;
+}
+.pages a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	color: #3E6984;
+	text-decoration: underline;
+}
+
+/* tuannh */
+.table
+{
+	border-collapse: collapse;
+	empty-cells: show;
+	border: 1px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000;
+}
+
+.table td
+{
+	padding: 4px;
+	background-color: #FFF;
+	color: red;
+	margin: 0;
+}
+
+
+/*-------MENU-------------*/
+ul
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.menuMain
+{
+	clear: both;
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0px auto;
+	z-index: 2;
+}
+.menuMain ul li
+{
+	float: left;
+	display: inline;
+	position: relative;
+}
+.menuMain ul li.sep
+{
+	background: url(../Images/sep.png) no-repeat top left;
+	width: 2px;
+	height: 58px;
+}
+.menuMain li a
+{
+	color: #FFFFFF;
+	background: #3E6984;
+	border: 1px solid #9CC6D1;
+	font: bold 12px Arial,Verdana;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.menuMain li a.last
+{
+	padding: 5px 7px;
+}
+.menuMain li.select > a, .menuMain li a.active, .menuMain li a:hover
+{
+	color: #FFFF00;
+}
+
+.menuMain ul li ul
+{
+	background: #3E6984;
+	border: 1px solid #9CC6D1;
+	display: none;
+	left: 0;
+	min-width: 179px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 99999;
+}
+
+.menuMain ul li ul.menu_game li
+{
+	width: 120px;
+}
+
+.menuMain ul li ul li a
+{
+	border-style: none;
+	float: left;
+}
+
+/*-------/MENU-------------*/
+
+.welcome
+{
+	float: right;
+	font-weight: bold;
+	margin-top: -35px;
+	padding-right: 10px;
+}
+
+.containTable
+{
+	min-height: 350px;
+}
+.containBG
+{
+	background: #3E6984;
+}
+
+.PagerInfoCell
+{
+	display: none;
+}
+
+.text
+{
+	width: 500px;
+}
+.textS
+{
+	width: 100px;
+}
+.textarea
+{
+	width: 500px;
+	height: 100px;
+}
+
+.logo .home
+{
+	display: block;
+	height: 52px;
+	margin-left: 25px;
+	text-indent: -1000px;
+	width: 232px;
+}
+
+.success
+{
+	color: #00F;
+}
+.error, .warning, tr.active
+{
+	color: #F00;
+}
+
+.number
+{
+	text-align: right;
+}
+
+tr.Calculated {text-decoration: line-through;}
+tr.Calculated .action {text-decoration: none;}
+
+.invisible { display: none; }
+
+

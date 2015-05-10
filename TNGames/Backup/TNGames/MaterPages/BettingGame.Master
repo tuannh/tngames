@@ -1,0 +1,220 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BettingGame.master.cs"
+    Inherits="TNGames.MaterPages.BettingGame" %>
+
+<%@ Register Src="../Controls/FrontEnd/UserInfo.ascx" TagName="UserInfo" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="/images/TNO.ico" type="image/vnd.microsoft.icon" />
+    <link href="/styles/game_web.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="1024" align="center" cellpadding="0" cellspacing="0" class="border">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="top">
+                    <tr>
+                        <td class="logo">
+                            <a title="Trang chủ" href="/" class="home">Home</a>
+                        </td>
+                        <td align="right" valign="bottom" class="backgroundtop">
+                            <table width="45%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="48" colspan="2" align="right">
+                                        <uc1:UserInfo ID="UserInfo1" runat="server" />
+                                        <div class="userIcon">
+                                            <img src="/images/web/user_icon.png" width="33" height="27" />
+                                        </div>
+                                    </td>
+                                    <td width="30">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="menubgleft">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="menu">
+                                                    <a href="/trang-tro-choi">TRANG TRÒ CHƠI</a>
+                                                </td>
+                                                <td class="menubgright">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="menubgleft">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="menu">
+                                                    <a href="/lien-he">LIÊN HỆ</a>
+                                                </td>
+                                                <td class="menubgright">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="10" id="content">
+                    <tr>
+                        <td width="250" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td valign="top">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="bggameAleft">
+                                                    &nbsp;
+                                                </td>
+                                                <td align="left" valign="top" class="bggameAcenter">
+                                                    <asp:ContentPlaceHolder ID="contentPlaceHolderLeft" runat="server" />
+                                                </td>
+                                                <td class="bggameAright">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td colspan="2">
+                                        <asp:ContentPlaceHolder ID="contentPlaceHolderCenter" runat="server" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top">
+                                        <asp:ContentPlaceHolder ID="contentPlaceHolderBottom" runat="server" />
+                                    </td>
+                                    <td width="300" valign="top">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td class="bgheaderClefttop">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="bgheaderCcentertop">
+                                                    <img src="/images/web/thongbaobantochuc.png" width="239" height="32" />
+                                                </td>
+                                                <td class="bgheaderCrighttop">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bgheaderCleftcenter">
+                                                    &nbsp;
+                                                </td>
+                                                <td bgcolor="#4F97BE">
+                                                    <asp:ContentPlaceHolder ID="contentPlaceHolderRight" runat="server" />
+                                                </td>
+                                                <td class="bgheaderCrightcenter">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bgheaderCleftcenter">
+                                                    &nbsp;
+                                                </td>
+                                                <td bgcolor="#4F97BE">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="bgheaderCrightcenter">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" colspan="2">
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderFooter" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" id="bottom">
+                    <tr>
+                        <td height="30" class="menubottom" style="padding-right: 5px;">
+                            <a href="/gop-y-phan-hoi">Gói ý/ Phản hồi</a><a href="#">Đường dây nóng</a><a href="#">
+                                Liên hệ quảng cáo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20" class="backgroundbottom1">
+                            <p>
+                                © Copyright 2012 HVT Tech Co., All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32498780-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

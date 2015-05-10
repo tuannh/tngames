@@ -1,0 +1,1246 @@
+body, td, th
+{
+	font-family: Arial;
+	font-size: 12px;
+}
+
+a
+{
+	outline: none;
+}
+
+.bgtable
+{
+	font-family: Arial;
+	color: #333333;
+	background-color: #E4ECF2;
+	text-align: justify;
+}
+
+body
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #3e6984;
+}
+/* logothanhnien_adminpages*/
+.logo
+{
+	background-image: url(../images/web/logo.png);
+	background-repeat: no-repeat;
+	width: 331px;
+	height: 100px;
+}
+
+/*background_top */
+.backgroundtop
+{
+	background-image: url("../images/web/background_top.jpg");
+	background-repeat: repeat-x;
+}
+
+/*background_bottom and menu bottom*/
+.menubottom
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.menubottom a:link
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.menubottom a:hover
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.menubottom a:visited
+{
+	background-color: #00a6eb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	font-family: Arial;
+	color: #FFF;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.backgroundbottom1
+{
+	background-color: #B4D6DC;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	font-family: Arial;
+	color: #305367;
+	padding-right: 30px;
+}
+
+/*menu*/
+.menubgleft
+{
+	background-image: url(../images/web/bg_menu_left.png);
+	width: 8px;
+	height: 26px;
+}
+.menubgright
+{
+	background-image: url(../images/web/bg_menu_right.png);
+	width: 8px;
+	height: 26px;
+}
+.menu
+{
+	background-color: #3e6984;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+}
+
+.menu a.active
+{
+	color: #FFFF00 !important;
+}
+
+.menu a:link
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu a:hover
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu a:visited
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+/* Acount */
+.accountred
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #900;
+}
+
+.accountred a:link
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #900;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.accountred a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.accountred a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #900;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Content*/
+
+.contentboldyellow
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0;
+}
+
+.contentbold
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+
+.contentbold a:link
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.contentbold a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.contentbold a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.contentdisable
+{
+	font: Arial;
+	font-size: 12px;
+	color: #666;
+}
+
+.content
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	background: #FFF;
+}
+
+.content a:link
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.content a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.content a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+}
+
+/* header*/
+.bgheaderleft
+{
+	background-image: url(../images/web/bgheader_left.png);
+	width: 19px;
+	height: 56px;
+}
+.bgheaderright
+{
+	background-image: url(../images/web/bgheader_right.png);
+	width: 20px;
+	height: 56px;
+}
+.header
+{
+	background-image: url(../images/web/bgheader_center.png);
+	background-repeat: repeat-x;
+	vertical-align: middle;
+}
+/* background button */
+.bgbuttonleft
+{
+	background-image: url(../images/web/button_left.png);
+	height: 25px;
+	width: 10px;
+}
+.bgbuttonright
+{
+	background-image: url(../images/web/button_right.png);
+	height: 25px;
+	width: 10px;
+}
+.bgbuttoncenter
+{
+	background-image: url(../images/web/button_center.png);
+	font: Arial;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 12px;
+	text-align: center;
+}
+.border
+{
+	border-color: #9CC6D1;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/* name game */
+.namegame
+{
+	font-family: Arial;
+	color: #F90;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* header A home page*/
+.bgheaderAlefttop
+{
+	background-image: url(../images/web/home_a_lefttop.png);
+	width: 19px;
+	height: 98px;
+}
+
+.bgheaderAleftbottom
+{
+	background-image: url(../images/web/home_a_leftbottom.png);
+	width: 19px;
+	height: 23px;
+}
+.bgheaderArighttop
+{
+	background-image: url(../images/web/home_a_righttop.png);
+	width: 19px;
+	height: 98px;
+}
+
+.bgheaderArightbottom
+{
+	background-image: url(../images/web/home_a_rightbottom.png);
+	width: 19px;
+	height: 23px;
+}
+.bgheaderAcentertop
+{
+	background-image: url(../images/web/home_a_centertop.png);
+	background-repeat: repeat-x;
+}
+.bgheaderAcenterbottom
+{
+	background-image: url(../images/web/home_a_centerbottom.png);
+	background-repeat: repeat-x;
+	height: 23px;
+}
+/* header B home page*/
+.bgheaderBlefttop
+{
+	background-image: url(../images/web/home_b_left_top.png);
+	width: 24px;
+	height: 56px;
+}
+.bgheaderBleftcenter
+{
+	background-image: url(../images/web/home_b_left_center.png);
+	width: 24px;
+	background-repeat: repeat-y;
+}
+.bgheaderBleftbottom
+{
+	background-image: url(../images/web/home_b_left_bottom.png);
+	width: 24px;
+	height: 25px;
+}
+.bgheaderBrighttop
+{
+	background-image: url(../images/web/home_b_right_top.png);
+	width: 22px;
+	height: 56px;
+}
+.bgheaderBrightcenter
+{
+	background-image: url(../images/web/home_b_right_center.png);
+	width: 22px;
+	background-repeat: repeat-y;
+}
+.bgheaderBrightbottom
+{
+	background-image: url(../images/web/home_b_right_bottom.png);
+	width: 22px;
+	height: 25px;
+}
+.bgheaderBcentertop
+{
+	background-image: url(../images/web/home_b_center_top.png);
+	background-repeat: repeat-x;
+}
+.bgheaderBcenterbottom
+{
+	background-image: url(../images/web/home_b_center_bottom.png);
+	background-repeat: repeat-x;
+}
+.headerdsgame
+{
+	background-image: url(../images/web/bgheader_center.png);
+	background-repeat: repeat-x;
+	vertical-align: middle;
+}
+/* header C home page*/
+.bgheaderClefttop
+{
+	background-image: url(../images/web/home_c_left_top.png);
+	width: 16px;
+	height: 54px;
+}
+.bgheaderCleftcenter
+{
+	background-image: url(../images/web/home_c_left_center.png);
+	width: 16px;
+	background-repeat: repeat-y;
+}
+.bgheaderCleftbottom
+{
+	background-image: url(../images/web/home_c_left_bottom.png);
+	width: 16px;
+	height: 22px;
+}
+.bgheaderCrighttop
+{
+	background-image: url(../images/web/home_c_right_top.png);
+	width: 18px;
+	height: 54px;
+}
+.bgheaderCrightcenter
+{
+	background-image: url(../images/web/home_c_right_center.png);
+	width: 18px;
+	background-repeat: repeat-y;
+}
+.bgheaderCrightbottom
+{
+	background-image: url(../images/web/home_c_right_bottom.png);
+	width: 18px;
+	height: 22px;
+}
+.bgheaderCcentertop
+{
+	background-image: url(../images/web/home_c_center_top.png);
+	background-repeat: repeat-x;
+}
+.bgheaderCcenterbottom
+{
+	background-image: url(../images/web/home_c_center_bottom.png);
+	background-repeat: repeat-x;
+}
+.bgheaderCcenter2
+{
+	background-image: url(../images/web/home_c_center_center.png);
+	background-repeat: repeat-x;
+}
+.headerdsgame
+{
+	background-image: url(../images/web/bgheader_center.png);
+	background-repeat: repeat-x;
+	vertical-align: middle;
+}
+
+/* background game page*/
+.bggameAleft
+{
+	background-image: url(../images/web/game_a_left.png);
+	width: 15px;
+	height: 416px;
+}
+.bggameAcenter
+{
+	background-image: url(../images/web/game_a_center.png);
+	background-repeat: repeat-x;
+}
+.bggameAright
+{
+	background-image: url(../images/web/game_a_right.png);
+	width: 17px;
+	height: 416px;
+}
+.bggameBleft
+{
+	background-image: url(../images/web/game_b_left.png);
+	width: 18px;
+	height: 416px;
+}
+.bggameBcenter
+{
+	background-image: url(../images/web/game_b_center.png);
+	background-repeat: repeat-x;
+}
+.bggameBright
+{
+	background-image: url(../images/web/game_b_right.png);
+	width: 21px;
+	height: 416px;
+}
+
+/* bg game ca cuoc */
+.bgcacuocAleft
+{
+	background-image: url(../images/web/bg_cacuocgame_left.png);
+	width: 28px;
+	height: 116px;
+}
+.bgcacuocAcenter
+{
+	background-image: url(../images/web/bg_cacuocgame_center.png);
+	background-repeat: repeat-x;
+}
+.bgcacuocAright
+{
+	background-image: url(../images/web/bg_cacuocgame_right.png);
+	width: 25px;
+	height: 116px;
+}
+.bgcacuocBleft
+{
+	background-image: url(../images/web/bg_cacuocgameB_left.png);
+	width: 18px;
+	height: 110px;
+}
+.bgcacuocBcenter
+{
+	background-image: url(../images/web/bg_cacuocgameB_center.png);
+	background-repeat: repeat-x;
+}
+.bgcacuocBright
+{
+	background-image: url(../images/web/bg_cacuocgameB_right.png);
+	width: 24px;
+	height: 110px;
+}
+
+/* pages*/
+.pages
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.pages a:link
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.pages a:hover
+{
+	font: Arial;
+	font-size: 12px;
+	color: #999;
+	font-weight: bold;
+}
+.pages a:visited
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+}
+/* score & time */
+.scoresmall
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+.score
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial;
+	text-align: center;
+}
+.bgscore
+{
+	background-color: #FFF;
+	border: thin;
+	border-bottom-color: #000;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+	font-family: Arial;
+	text-align: center;
+}
+
+/* questions & Answer */
+.questions
+{
+	font-family: Arial;
+	color: #FF0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+.answer
+{
+	font-family: Arial;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* tuannh */
+.captcha
+{
+	float: left;
+}
+.captcha img
+{
+	cursor: pointer;
+}
+.btnRegister, .btnReset
+{
+	background: none;
+	border: none;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.success
+{
+	color: #0F0;
+}
+.error, .warning
+{
+	padding: 10px;
+	color: #F00;
+}
+
+
+/* game */
+.timeout
+{
+	display: none;
+}
+.invisible
+{
+	display: none;
+}
+.qesGame, .pregame, .bgame
+{
+	color: #FFF;
+}
+
+.qesGame #radList input[type=radio]
+{
+	display: none;
+}
+.pregame #radList input[type=radio]
+{
+	display: none;
+}
+
+.uncheck
+{
+	background: url("/images/web/uncheck.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 45px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.check
+{
+	background: url("/images/web/check.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 45px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.buttonS
+{
+	background: url("/images/web/button_sizeS.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 31px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	padding-right: 14px;
+	width: 54px;
+	cursor: pointer;
+}
+
+.buttonS:hover
+{
+	background: url("/images/web/button_sizeS_over.png") no-repeat scroll 0 0 transparent;
+}
+
+
+.buttonL
+{
+	background: url("/images/web/button_sizeL.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 31px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	width: 94px;
+	cursor: pointer;
+}
+
+.buttonL:hover
+{
+	background: url("/images/web/button_sizeL_over.png") no-repeat scroll 0 0 transparent;
+}
+
+
+.btnClose
+{
+	background: url("/images/web/close_button.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	height: 31px;
+	overflow: hidden;
+	text-indent: -1000px;
+	width: 94px;
+}
+
+.userIcon
+{
+	float: right;
+}
+.accountred
+{
+	float: left;
+	padding-left: 17px;
+}
+.accountredTop
+{
+	float: right;
+	padding-left: 9px;
+}
+
+.mycontent
+{
+	padding: 10px;
+	min-height: 420px;
+}
+
+.gameList
+{
+	height: 526px;
+	overflow: hidden;
+}
+.generalList
+{
+	height: 547px;
+	overflow: auto;
+}
+.bettingPoint
+{
+	text-align: center;
+	padding-top: 11px;
+}
+
+.bettingUncheck
+{
+	background: url("/images/web/uncheck.png") no-repeat scroll center 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 33px;
+	text-indent: -1000px;
+}
+
+.bettingCheck
+{
+	background: url("/images/web/check.png") no-repeat scroll center 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 33px;
+	text-indent: -1000px;
+}
+
+.txtPoint
+{
+	border: none;
+	background: transparent;
+	border: 1px solid #FFF;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+	height: 32px;
+	margin-bottom: 4px;
+	margin-left: -4px;
+	text-align: center;
+	width: 97px;
+}
+
+.scorePoint
+{
+}
+
+.bname
+{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.bettingTeam .scoresmall
+{
+	color: #FFFF00;
+	font-size: 20px;
+}
+
+/* table */
+.containBG
+{
+	background: #3E6984;
+}
+/* header*/
+
+.headerText
+{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Arial;
+	color: #900;
+}
+/* drawtable */
+
+.headertable
+{
+	background-color: #4E86A7;
+	font: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	border: thin;
+	border-color: #3E6984;
+	color: #FFF;
+	text-align: center;
+}
+.Table
+{
+	font-size: 12px;
+	color: #000;
+	border-color: #3E6984;
+	background-color: #FFF;
+	border: thin;
+	font-family: Arial;
+	font-weight: bold;
+}
+/* pages*/
+.pages
+{
+	font: Arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.PagerInfoCell
+{
+	display: none;
+}
+.active
+{
+	color: #990000 !important;
+}
+
+.clip
+{
+	height: 290px;
+	margin-top: -10px;
+	overflow: auto;
+	width: 435px;
+}
+
+.hnotice
+{
+	height: 283px;
+	overflow: auto;
+	padding-left: 10px;
+}
+
+.qnotice
+{
+	height: 340px;
+	overflow: auto;
+	padding-left: 10px;
+}
+
+.bnotices
+{
+	height: 211px;
+	overflow: auto;
+	padding-left: 10px;
+}
+
+.logo .home
+{
+	display: block;
+	height: 52px;
+	margin-left: 25px;
+	text-indent: -1000px;
+	width: 232px;
+}
+
+.newscontainer
+{
+}
+
+.newslist
+{
+	list-style: none outside none;
+	padding-left: 10px;
+}
+
+/* news top css */
+.bgcacuocBcenter .newslist li
+{
+	height: 22px;
+}
+.bgcacuocBcenter .newslist li span
+{
+	font-style: italic;
+	font-size: 11px;
+	color: #FF0;
+	display: none;
+}
+.bgcacuocBcenter .newslist a
+{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.bgcacuocBcenter .newsicon
+{
+	float: left;
+	height: 84px;
+	padding-right: 15px;
+	padding-top: 16px;
+}
+
+/* news list */
+.mycontent .newslist li
+{
+	padding-bottom: 10px;
+}
+.mycontent .newslist li span
+{
+	font-style: italic;
+	font-size: 11px;
+	color: #FF0;
+	display: none;
+}
+.mycontent .newslist .newsPhoto
+{
+	max-width: 150px;
+	max-height: 150px;
+	padding-right: 10px;
+}
+.mycontent .newslist .divPhoto
+{
+	width: 160px;
+}
+.mycontent .newslist .newscontent
+{
+	float: right;
+	width: 450px;
+}
+#dudoan
+{
+	margin-top: 11px;
+}
+#dudoan a
+{
+	display: block;
+	height: 40px;
+	left: 96px;
+	line-height: 40px;
+	position: relative;
+	text-indent: -1000px;
+	top: -325px;
+	width: 192px;
+	overflow: hidden;
+	background: url("/images/bg_trans.png");
+}
+
+#cauhoi
+{
+	margin-top: 11px;
+}
+#cauhoi a
+{
+	display: block;
+	height: 40px;
+	left: 135px;
+	line-height: 40px;
+	position: relative;
+	text-indent: -1000px;
+	top: -290px;
+	width: 192px;
+	overflow: hidden;
+	background: url("/images/bg_trans.png");
+}
+
+#cacuoc
+{
+	margin-top: 11px;
+}
+#cacuoc a
+{
+	display: block;
+	height: 40px;
+	left: 82px;
+	line-height: 40px;
+	overflow: hidden;
+	position: relative;
+	text-indent: -1000px;
+	top: -185px;
+	width: 192px;
+	background: url("/images/bg_trans.png");
+}
+
+.bgbutton
+{
+	background: url("/images/web/button_list.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 30px;
+	padding-left: 36px;
+	text-align: left;
+	vertical-align: middle;
+	width: 290px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.clear
+{
+	clear: both;
+}
+.betted
+{
+	text-decoration: line-through;
+	cursor: default;
+}
+.notices
+{
+	list-style: none;
+	padding: 0;
+}
+.notices li.notice
+{
+	padding: 5px 0;
+}
+
+#pnlDetail .summary
+{
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.summary #imgPhoto
+{
+	max-height: 200px;
+	max-width: 200px;
+}
+
+/* notice */
+.noticelist
+{
+	list-style: none outside none;
+	padding-left: 10px;
+}
+.notices
+{
+}
+.notices .anotice
+{
+	color: #FFF;
+	text-decoration: none;
+}
+.mycontent .noticelist li
+{
+	padding-bottom: 10px;
+}
+
+.btnXclose
+{
+	background: url("../images/fancybox/fancybox.png") repeat scroll -40px 0 transparent !important;
+	cursor: pointer;
+	height: 30px !important;
+	left: 342px !important;
+	top: -453px !important;
+	width: 30px !important;
+}
+
+#allgame img
+{
+	border-style: none;
+}
+
+.bettingContainer
+{
+	height: 85px;
+	overflow: auto;
+}
+
+
+/* button + dang nhap homepage*/
+/* 2012.05.30 */
+.textfield
+{
+	background-color: #3E6984;
+	border: 1px solid #FFFFFF;
+	color: #B4D6DC;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	height: 22px;
+	padding-right: 30px;
+}
+
+.button
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial;
+	background-image: url(images/button_sizeL_over.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+}
+.button a:link
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial;
+	background-image: url(images/button_sizeL_over.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+	text-decoration: none;
+}
+.button a:visted
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial;
+	background-image: url(images/button_sizeL.png));
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+	text-decoration: none;
+}
+.dangnhap
+{
+	background-color: #B4D6DC;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial;
+	color: #305367;
+	padding-right: 30px;
+}
+.dangnhap a:link
+{
+	background-color: #B4D6DC;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.clear
+{
+	clear: both;
+}
+
+/* 2012.06.02 */
+.qdetail, .pdetail
+{
+	width: 800px;
+	padding: 5px 15px 10px 10px;
+}
+
+.rightAnswer, .yourAnswer
+{
+	color: #F00;
+}
+.incorectAnswer
+{
+	text-decoration: line-through;
+}
+
+.gameRankList
+{
+	height: 180px;
+	overflow: auto;
+}
+
+.searchRankList
+{
+	height: 50px;
+	overflow: auto;
+}
