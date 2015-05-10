@@ -13,6 +13,7 @@ namespace TNGames
 
         void RegisterRoutes(RouteCollection routes)
         {
+            // using vs 2010
             #region admin
 
             routes.MapPageRoute(
